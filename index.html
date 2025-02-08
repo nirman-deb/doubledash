@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhumi Putra - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buy.html">Buy Equipment</a></li>
+      <li><a href="sell.html">Sell Produce</a></li>
+      <li><a href="rent.html">Rent Equipment</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to Bhumi Putra</h1>
+    <p>Your one-stop platform for weather updates, soil testing, community support, and more....</p>
+  </header>
+
+  <!-- Weather Forecast Section -->
+  <section id="weather">
+    <h1>Weather Forecast</h1>
+    <div class="weather-data">
+      <h3>Past 7 Days Weather</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Temp</th>
+            <th>Condition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-01-01</td>
+            <td>15°C</td>
+            <td>Sunny</td>
+          </tr>
+          <tr>
+            <td>2025-01-02</td>
+            <td>14°C</td>
+            <td>Cloudy</td>
+          </tr>
+          <tr>
+            <td>2025-01-03</td>
+            <td>13°C</td>
+            <td>Rainy</td>
+          </tr>
+          <tr>
+            <td>2025-01-04</td>
+            <td>12°C</td>
+            <td>Windy</td>
+          </tr>
+          <tr>
+            <td>2025-01-05</td>
+            <td>16°C</td>
+            <td>Sunny</td>
+          </tr>
+          <tr>
+            <td>2025-01-06</td>
+            <td>14°C</td>
+            <td>Cloudy</td>
+          </tr>
+          <tr>
+            <td>2025-01-07</td>
+            <td>15°C</td>
+            <td>Sunny</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Rainfall Prediction for next season</h3>
+      <p>
+        Based on the data there is a chances of <b>1000mm</b> rain in your area in the upcoming season.
+      </p>
+    </div>
+  </section>
+
+  <!-- Soil Test Order Section -->
+  <section id="soil-test">
+    <h2>Soil Test Order</h2>
+    <p>Click below to share your location and order a soil sample test.</p>
+    <button id="locationBtn" class="btn">Share My Location</button>
+    <div id="locationStatus"></div>
+  </section>
+
+  <!-- Sign Up Section -->
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <p>Join our community by providing your details.</p>
+    <form id="signupForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone number" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Your address" required></textarea>
+
+      <label for="farmName">Farm Name:</label>
+      <input type="text" id="farmName" name="farmName" placeholder="Your farm name" required />
+
+      <label for="farmSize">Farm Size (acres):</label>
+      <input type="number" id="farmSize" name="farmSize" placeholder="Size of your farm" required />
+
+      <label for="crops">Crops Grown:</label>
+      <input type="text" id="crops" name="crops" placeholder="List your main crops" required />
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <div id="signupMessage"></div>
+  </section>
+
+  <!-- Expert Consultancy Section -->
+  <section id="expert-consultancy">
+    <h2>Expert Consultancy</h2>
+    <p>
+      Consult with our experienced agricultural experts for personalized advice on crop selection, pest management, and advanced farming techniques. Let us help you achieve the best yield and sustainable practices for your farm.
+    </p>
+    <button class="btn" id="consultBtn">Get Expert Advice</button>
+  </section>
+
+  <!-- Farming Loan Section -->
+  <section id="farming-loan">
+    <h2>Farming Loan</h2>
+    <p>
+      Need funding to expand or improve your farm? Apply for a farming loan with competitive interest rates and flexible repayment options. Our trusted financial partners are here to support your agricultural growth.
+    </p>
+    <button class="btn" id="loanBtn">Apply for Loan</button>
+  </section>
+
+  <!-- Rent Equipment Section -->
+  <section id="rent-equipment">
+    <h2>Rent Equipment</h2>
+    <p>
+      Looking to rent farming equipment instead of buying? Click the button below to browse our selection of rental equipment with flexible rental terms and competitive prices.
+    </p>
+    <a href="rent.html" class="btn">Rent Equipment</a>
+  </section>
+
+  <!-- Community / News Section -->
+  <section id="community">
+    <h2>Farming Community</h2>
+    <p>Connect with fellow farmers and stay updated with the latest trends.</p>
+    <article class="newsItem">
+      <img src="images/news1.jpg" alt="Organic Farming Trends" />
+      <h3>Organic Farming Trends</h3>
+      <p>Learn how organic farming practices are revolutionizing crop production.</p>
+    </article>
+    <article class="newsItem">
+      <img src="images/news2.jpg" alt="Crop Rotation Benefits" />
+      <h3>Crop Rotation Benefits</h3>
+      <p>Discover how crop rotation can improve soil fertility and yield.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Farmers Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

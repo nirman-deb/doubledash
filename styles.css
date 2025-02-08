@@ -1,0 +1,224 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Background image (replace with your own image as needed) */
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    max-width: 1200px;
+  }
+  
+  .weather-data table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .weather-data th,
+  .weather-data td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #006400;
+  }
+  
+  .newsItem {
+    margin: 20px auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    max-width: 1200px;
+  }
+  
+  .newsItem img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 128, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Styles for larger screens (e.g., PCs) */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+    
+    header {
+      padding: 80px 20px;
+    }
+    
+    header h1 {
+      font-size: 3.5em;
+    }
+    
+    header p {
+      font-size: 1.7em;
+    }
+    
+    .container {
+      max-width: 1400px;
+      padding: 40px;
+      margin: 40px auto;
+    }
+    
+    nav ul li a {
+      font-size: 1.3em;
+    }
+    
+    form input,
+    form textarea {
+      font-size: 1.2em;
+    }
+    
+    .btn {
+      padding: 18px 36px;
+      font-size: 1.2em;
+    }
+    
+    section {
+      padding: 40px;
+      margin: 30px auto;
+      max-width: 1400px;
+    }
+    
+    .weather-data th,
+    .weather-data td {
+      padding: 20px;
+      font-size: 1.2em;
+    }
+    
+    .gallery-item {
+      width: 300px;
+    }
+    
+    .gallery-item img {
+      height: 200px;
+    }
+    
+    .newsItem {
+      margin: 30px auto;
+    }
+  }
+  
